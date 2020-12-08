@@ -1,0 +1,23 @@
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin green-box-shadow--small {
+  box-shadow: 5px 5px 1px #63bc96;
+}
+
+@mixin green-box-shadow--big {
+  box-shadow: 10px 10px 1px #63bc96;
+}
