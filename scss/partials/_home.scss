@@ -1,0 +1,43 @@
+header {
+  padding: 25px 0;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.fullbleed--home {
+  background-image: url('../assets/home-hero.png');
+}
+
+.feature__image {
+  width: 138px;
+  height: 90px;
+  margin-bottom: 20px;
+
+  img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+  }
+}
+
+.feature__text {
+  color: $color-accent;
+}
+
+#who {
+  padding: 90px 0;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p.wide-width {
+    margin-bottom: 35px;
+  }
+
+  .image-container {
+    margin-bottom: 20px;
+  }
+}
