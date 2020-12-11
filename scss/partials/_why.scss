@@ -1,0 +1,53 @@
+.fullbleed--why {
+  background-image: url('../assets/why-hero.png');
+  background-position: 32% 50%;
+}
+
+.features__text, .features__image {
+  height: 325px
+}
+
+.features__image img {
+  object-fit: cover;
+}
+
+.features__text {
+  background: $background-black;
+  color: white;
+  padding: 0 10px;
+  order: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  @include mq(tablet){
+    padding: 0 80px;
+  }
+  
+  @include mq(desktop){
+    padding: 110px 95px;
+    order: 0;
+    display: block;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+.features__image img{
+  height: 100%;
+}
+
+@include mq(desktop){
+  .features__text, .features__image {
+    height: auto;
+  }
+}
+
+@include mq(tablet){
+  .features__text, .features__image {
+    height: 430px;
+  }
+}

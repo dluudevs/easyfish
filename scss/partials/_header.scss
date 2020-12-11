@@ -8,6 +8,10 @@ header {
   align-items: flex-start;
   padding: 8px 8px 0 8px;
 
+  @include mq(desktop){
+    align-items: center;
+  }
+
   li {
     padding: 5px 0;
 
@@ -17,6 +21,13 @@ header {
 
     &:nth-child(3){
       display: none;
+    }
+
+    @include mq(desktop){
+      padding: 0;
+      &:not(:last-child){
+        margin-bottom: 0px;
+    }
     }
     
   }
@@ -28,6 +39,10 @@ header {
 
     li:nth-child(3){
       display: block;
+    }
+
+    li:last-child{
+      display: none;
     }
     
   }

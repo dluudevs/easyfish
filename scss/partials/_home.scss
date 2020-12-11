@@ -1,14 +1,15 @@
 .fullbleed--home {
   background-image: url('../assets/home-hero.png');
+  background-position: center;
 }
 
 @include mq(tablet){
-  #skills .feature__item:nth-child(n + 3) {
+  #skills .skills__item:nth-child(n + 3) {
     margin-top: 50px;
   }
 }
 
-.feature__image {
+.skills__image {
   width: 138px;
   height: 90px;
   margin-bottom: 20px;
@@ -20,12 +21,16 @@
   }
 }
 
-.feature__text {
+.skills__text {
   color: $color-accent;
 }
 
 #who {
-  padding: 90px 0;
+  padding: 50px 0;
+
+  @include mq(tablet){
+    padding: 90px 0;
+  }
 
   h2 {
     margin-bottom: 5px;
