@@ -17,6 +17,10 @@ a {
   font-size: inherit;
 }
 
+p {
+  margin: 0;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -66,10 +70,30 @@ h4 {
 .fullbleed {
   background-size: cover;
   width: 100%;
-  height: 52.6vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include mq (desktop){
+    height: 52.75vh
+  }
+}
+
+.grid-x.grid-margin-x.vertical-stack > .cell:not(:first-child) {
+  margin-top: 50px;
+
+  @include mq (desktop){
+    margin-top: 0;
+  }
+}
+
+.grid-x.grid-margin-x > .cell:not(:first-child) {
+  margin-top: 50px;
+
+  @include mq (tablet){
+    margin-top: 0;
+  }
 }
 
 .fullbleed-text-container {
@@ -105,15 +129,15 @@ h4 {
 }
 
 ul {
+  list-style: none;
   margin: 0;
-  color: $font-black;
 }
 
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 90px 0;
+  padding: 80px 0;
 }
 
 .banner--blue {
@@ -130,16 +154,25 @@ ul {
   width: 870px;
 
   h2 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 }
 
 .wide-width {
-  width: 870px;
+  max-width: 870px;
   margin: 0 auto;
   text-align: center;
 }
 
 .bold {
   font-weight: 700;
+}
+
+.highlight {
+  font-weight: bold;
+  color: $color-accent;
+
+  &:hover, &:focus{
+    text-decoration: underline;
+  }
 }

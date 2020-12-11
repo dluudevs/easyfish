@@ -1,24 +1,17 @@
 // CSS Variables
 :root {
   --wrapper-width: 90%;
-  --font-size-body: 20px;
-  --font-size-body--small: 18px;
+  --font-size-body: 18px;
+  --font-size-body--small: 16px;
   --font-size-form: 18px;
-  --font-size-h1: 70px;
-  --font-size-h2: 40px;
-  --font-size-h3: 28px;
-  --font-size-h4: 24px;
+  --font-size-h1: 50px;
+  --font-size-h2: 32px;
+  --font-size-h3: 26px;
+  --font-size-h4: 22px;
 }
 
 // Font Awesome Variable
 $fa-font-path: "./font-awesome/webfonts";
-
-// SCSS Variables
-$breakpoints: (
-  'small': 576px,
-  'medium': 768px,
-  'large': 1030px,
-);
 
 // Typography
 $font-style-body: 'Lato', sans-serif;
@@ -39,20 +32,20 @@ $section-spacing: 100px;
 // Transition
 $transition: all 0.25s;
 
-@include respond-to('medium'){
+@include mq(tablet){
   :root {
     --font-size-h1: 70px;
     --font-size-h2: 40px;
     --font-size-h3: 36px;
     --font-size-h4: 30px;
     --font-size-body: 24px;
-    --font-size-body--small: 18px;
+    --font-size-body--small: 20px;
   }
 }
 
-@include respond-to('large'){
+@include mq(desktop){
   :root {
-    --font-size-body--small: 20px;
+    // --font-size-body--small: 20px;
     --font-size-form: 24px;
   }
 }

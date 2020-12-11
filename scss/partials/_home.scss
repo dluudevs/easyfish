@@ -1,13 +1,11 @@
-header {
-  padding: 25px 0;
-}
-
-.nav-links {
-  list-style: none;
-}
-
 .fullbleed--home {
   background-image: url('../assets/home-hero.png');
+}
+
+@include mq(tablet){
+  #skills .feature__item:nth-child(n + 3) {
+    margin-top: 50px;
+  }
 }
 
 .feature__image {
@@ -30,7 +28,7 @@ header {
   padding: 90px 0;
 
   h2 {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   p.wide-width {

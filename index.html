@@ -12,13 +12,18 @@
   <body>
     <header>
       <div class="grid-container">
-        <div class="grid-x align-justify">
-          <div class="image-container cell small-2"><a href="#"><img src="assets/logo.png" alt="easyfish logo"></a></div>
-          <nav class="cell small-6">
+        <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="large">
+          <div class="image-container header-logo-mobile"><a href="#"><img src="assets/logo.png" alt="easyfish logo"></a></div>
+          <button class="menu-icon" type="button" data-toggle="nav-menu"></button>
+        </div>
+        <div class="grid-x align-justify" id="nav-menu">
+          <div class="image-container header-logo cell small-6 large-2"><a href="#"><img src="assets/logo.png" alt="easyfish logo"></a></div>
+          <nav class="cell large-6">
             <ul class="nav-links grid-x align-justify align-middle">
               <li><a href="#">Why EasyFish?</a></li>
               <li><a href="#">Pre-Trip Checklist</a></li>
               <li><a class="button" href="#">Book A Trip</a></li>
+              <li class="highlight"><a href="#"></a>Book A Trip</li>
             </ul>
           </nav>
         </div>
@@ -36,16 +41,16 @@
         </div>
       </section>
       <div class="banner banner--blue">
-        <div class="banner-text">
+        <div class="grid-container banner-text">
           <h2>Experience fishing from a better angle</h2>
           <p>Learn to fish from a group of fish crazy friends, teaching the ins and outs of fishing, from electronics to cooking your catch. Enjoy the trip with the comfort of heated huts, hot chocolate, snacks, and a fish fry at the end of your day.</p>
         </div>
       </div>
-      <section>
+      <section id="skills">
         <div class="fullbleed fullbleed--pattern">
-          <div class="grid-container features">
-            <div class="grid-x grid-margin-x">
-              <div class="cell medium-6 large-3">
+          <div class="grid-container">
+            <div class="grid-x grid-margin-x feature">
+              <div class="cell medium-6 large-3 feature__item">
                 <div class="feature__image">
                   <img src="assets/warmth-icon.png" alt="warmth icon">
                 </div>
@@ -54,7 +59,7 @@
                   <p>Get to the fishing hole via a snowmobile ride and enjoy the comfort of our heated fishing huts for the duration of your fishing adventure.</p>
                 </div>
               </div>
-              <div class="cell medium-6 large-3">
+              <div class="cell medium-6 large-3 feature__item">
                 <div class="feature__image">
                   <img src="assets/saftey-icon.png" alt="safety icon">
                 </div>
@@ -63,7 +68,7 @@
                   <p>With our experience on ice, we only take our charters out to areas with safe ice. Leave the safety precautions to us and enjoy your trip.</p>
                 </div>
               </div>
-              <div class="cell medium-6 large-3">
+              <div class="cell medium-6 large-3 feature__item">
                 <div class="feature__image">
                   <img src="assets/fishing-icon.png" alt="fishing icon">
                 </div>
@@ -72,7 +77,7 @@
                   <p>If you are interested in learning the sport, you’ve come to the right place. Cut the learning curve to be able to learn how to catch fish quicker.</p>
                 </div>
               </div>
-              <div class="cell medium-6 large-3">
+              <div class="cell medium-6 large-3 feature__item">
                 <div class="feature__image">
                   <img src="assets/cook-icon.png" alt="cooking icon">
                 </div>
@@ -89,7 +94,7 @@
         <div class="grid-container">
           <h2 class="font-blue">Who we cater to</h2>
           <p class="wide-width">Whether you’re looking for activities to do during your winter cottage trip, or just looking for a new experience, we’ve got you covered.</p>
-          <div class="grid-x grid-margin-x">
+          <div class="grid-x grid-margin-x vertical-stack">
             <div class="cell large-4">
               <div class="image-container">
                 <img src="assets/who-weekend.png" alt="weekend getaway fishing">
@@ -115,6 +120,19 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="grid-container">
+        <div class="image-container footer-logo">
+          <img src="assets/footer-logo.png" alt="easy fish blue anchor logo">
+        </div>
+        <div class="grid-x">
+          <ul class="footer-links grid-x">
+            <li class="cell medium-5 large-3"><a href="#">Terms and Conditions</a></li>
+            <li class="cell medium-3 large-2"><a href="#">Ice Safety</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>

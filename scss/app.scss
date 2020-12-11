@@ -63,9 +63,15 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+//Sass-MQ
+@import 'mq';
+
 //Partials
 @import './partials/setup';
 @import './partials/mixin';
 @import './partials/variables';
 @import './partials/universal';
+@import './partials/foundation';
+@import './partials/header';
+@import './partials/footer';
 @import './partials/home';
