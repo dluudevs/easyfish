@@ -217,6 +217,10 @@ ul {
   font-weight: 700;
 }
 
+.small-font {
+  font-size: var(--font-size-body--small);
+}
+
 .highlight {
   font-weight: bold;
   color: $color-accent;

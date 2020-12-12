@@ -18,10 +18,9 @@ footer {
 }
 
 .footer-logo {
-  max-height: 143px;
   position: absolute;
   bottom: 0;
-  max-width: 90px;
+  max-width: 100px;
 
   @include mq(tablet){
     max-width: 157px;
@@ -36,6 +35,12 @@ footer {
 .footer-links {
   justify-content: flex-end;
   width: 51%;
+  line-height: 1.2;
+
+  li:first-child {
+    margin-bottom: 7.5px;
+  }
+  
   @include mq(tablet){
     width: 100%;
   }

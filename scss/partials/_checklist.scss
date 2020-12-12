@@ -1,0 +1,35 @@
+.fullbleed--checklist {
+  background: url('../assets/checklist-hero.png') center;
+}
+
+.banner--checklist {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  
+  @include mq(tablet){
+    padding-top: 100px;
+    padding-bottom: 115px;
+  }
+}
+
+#bring {
+  padding-top: 70px;
+  padding-bottom: 60px;
+  background-image: url('../assets/banner-pattern.png');
+  
+  h2 {
+    color: $color-accent;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin: 15px auto;
+    width: fit-content;
+    text-align: center;
+
+    li:before {
+      content:'•';
+      padding-right: 5px;
+    }
+  }
+}

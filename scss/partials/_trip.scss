@@ -52,6 +52,10 @@
     .g-recaptcha {
       width: 100%;
 
+      @include mq(tablet){
+        margin-left: -15px;
+      }
+
       & > div {
         transform: scale(0.91);
         margin: 0 auto;
