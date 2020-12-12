@@ -124,7 +124,7 @@ h4 {
   color: $font-white;
   font-weight: 700;
   font-size: inherit;
-  padding: 10px 35px;
+  padding: 15px 35px;
   margin: 0;
 
   &:hover {
@@ -172,6 +172,41 @@ ul {
   }
 }
 
+.frame-banner {
+    padding: 35px 10px 25px 10px;
+    background-image: url('../assets/banner-pattern.png');
+    background-size: cover;
+    max-width: 679px;
+    margin: 0 auto;
+    color: $color-accent;
+    position: relative;
+
+    @include mq(tablet){
+      padding-top: 50px;
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      max-width: 430px;
+    }
+}
+
+.blue-frame {
+  width: 100%;
+  border: 5px solid $color-accent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  @include mq(tablet){
+    top: 20px;
+    left: 20px;
+    bottom: -25px;
+  }
+}
+
 .wide-width {
   max-width: 870px;
   margin: 0 auto;
@@ -188,5 +223,20 @@ ul {
 
   &:hover, &:focus{
     text-decoration: underline;
+  }
+}
+
+.leads-form {
+  max-width: 917px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+
+  .button {
+    margin: 25px auto 0 auto;
+
+    @include mq(tablet){
+      margin: 40px auto 0 auto;
+    }
   }
 }

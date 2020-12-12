@@ -1,0 +1,66 @@
+.fullbleed--trip {
+  background: url('../assets/trip-hero.png');
+  background-position: center;
+}
+
+#trip-cta {
+  padding-top: 60px;
+  padding-bottom: 85px;
+
+  .frame-banner {
+    margin-bottom: 50px;
+
+    @include mq(tablet){
+      margin-bottom: 100px;
+    }
+  }
+
+  .leads-form {
+    input {
+      border: none;
+      border-bottom: 1px solid $border-grey;
+      box-shadow: none;
+      color: $font-grey;
+      margin-bottom: 19px;
+      width: 100%;
+
+      &::placeholder {
+        color: $font-grey;
+      }
+
+      @include mq(tablet){
+        &:nth-child(-n + 3), &[name="phoneNumber"]{
+          width: calc((100% - 90px) / 3);
+          TODO: add recaptcha
+        }
+  
+        &[name="number of people"]{
+          width: calc( ( (100% - 90px) / 3 ) * 2 + 45px );
+        }
+      }
+    }
+
+    .button {
+      width: 275px;
+      margin-bottom: 20px;
+
+      @include mq(tablet){
+        margin-bottom: 0;
+      }
+    }
+
+    .g-recaptcha {
+      width: 100%;
+
+      & > div {
+        transform: scale(0.91);
+        margin: 0 auto;
+
+        @include mq(tablet){
+          margin: 0;  
+        }
+      }
+
+    }
+  }
+}
