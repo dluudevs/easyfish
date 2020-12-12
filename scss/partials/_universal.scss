@@ -224,6 +224,7 @@ ul {
 .highlight {
   font-weight: bold;
   color: $color-accent;
+  cursor: pointer;
 
   &:hover, &:focus{
     text-decoration: underline;
