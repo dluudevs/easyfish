@@ -1,9 +1,7 @@
-.safety-hero {
-  width: 100%;
-  height: 60vh;
+.fullbleed--safety {
   background-image: url('../assets/safety-hero.jpg');
-  background-size: cover;
   background-position: 6.5% 0;
+  display: flex;
 
   @include mq(tablet){
     background-position: 0 0;
@@ -13,6 +11,7 @@
     color: white;
     text-align: center;
     padding-top: 30px;
+    align-self: flex-start;
 
     @include mq(tablet){
       padding-top: 50px;  
