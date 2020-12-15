@@ -1,0 +1,43 @@
+.fullbleed--faq {
+  background-image: url('../assets/faq-hero.jpg');
+  background-position: 17% 0;
+}
+
+#facts {
+  padding: 65px 0;
+
+  @include mq(tablet){
+    padding-top: 100px;
+  }
+}
+
+.faq-list {
+  text-align: center;
+
+  @include mq(desktop){
+    text-align: left;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  @include mq(tablet){
+    li:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+
+  h2 {
+    color: $color-accent;
+    margin-bottom: 10px;
+  }
+}

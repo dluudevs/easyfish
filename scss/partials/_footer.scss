@@ -33,30 +33,38 @@ footer {
 }
 
 .footer-links {
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 51%;
   line-height: 1.2;
+  margin-left: 200px;
 
-  li:first-child {
-    margin-bottom: 7.5px;
-  }
-  
   @include mq(tablet){
     width: 100%;
   }
   @include mq(desktop){
     margin-left: 215px;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
+
   li {
     &:hover a {
-    color: $font-white;
-    text-decoration: underline;
+      color: $font-white;
+      text-decoration: underline;
+    }
+
+    &:first-child {
+      margin-bottom: 7.5px;
+    }
+
+    &:last-child {
+      display: none;
     }
   }
   @include mq(desktop){
-    li:first-child {
-      margin-right: 75px;
+    li {
+      &:last-child {
+        display: block;
+      }
     }
   }
 }
