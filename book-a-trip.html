@@ -9,13 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     </script>
   </head>
   <body>
     <header>
       <div class="grid-container">
         <div class="title-bar" data-responsive-toggle="nav-menu" data-hide-for="large">
-          <div class="image-container header-logo-mobile"><a href="#"><img src="assets/logo.png" alt="easyfish logo"></a></div>
+          <div class="image-container header-logo-mobile"><a href="index.html"><img src="assets/logo.png" alt="easyfish logo"></a></div>
           <button class="menu-icon" type="button" data-toggle="nav-menu"></button>
         </div>
         <div class="grid-x align-justify" id="nav-menu">
@@ -56,7 +58,7 @@
             <input type="text" placeholder="Phone Number" aria-label="Phone Number" name="phoneNumber" required>
             <input type="number" min="0" placeholder="# of People in Your Group" aria-label="Number of People in Your Group" name="number of people" required>
   
-            <input type="text" placeholder="Additional Notes (Optional)" aria-label="Additional Notes, optional field" name="additional notes">
+            <input type="text" class="flatpickr" placeholder="Select a Date" aria-label="Select a Date" name="date" required>
   
             <div class="g-recaptcha" data-sitekey="6LfeuAMaAAAAAOu6PWjCLhX9fTZGDERuaMM4RARv"></div>
             <button class="button leads-form__button">Send Message</button>
