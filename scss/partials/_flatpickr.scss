@@ -1,0 +1,20 @@
+.flatpickr-months {
+  background: $color-accent;
+
+  .flatpickr-month {
+    color: $font-white;
+  }
+
+  .flatpickr-prev-month, .flatpickr-next-month {
+    fill: $font-white;
+
+    &:hover svg {
+      fill: $font-grey;
+    }
+  }
+}
+
+.flatpickr-day.selected {
+  background-color: $color-accent;
+  border-color: $color-accent;
+}

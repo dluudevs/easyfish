@@ -238,6 +238,10 @@ ul {
   display: flex;
   flex-flow: row wrap;
 
+  .flatpickr {
+    background-color: transparent;
+  }
+
   .button {
     margin: 25px auto 0 auto;
 
