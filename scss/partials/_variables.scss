@@ -35,10 +35,10 @@ $transition: all 0.25s;
 @include mq(tablet){
   :root {
     --font-size-h1: 70px;
-    --font-size-h2: 40px;
-    --font-size-h3: 36px;
+    --font-size-h2: 30px;
+    --font-size-h3: 30px;
     --font-size-h4: 30px;
-    --font-size-body: 24px;
+    --font-size-body: 22px;
     --font-size-body--small: 20px;
   }
 }

@@ -1,6 +1,6 @@
 .fullbleed--home {
-  background-image: url('../assets/home-hero.jpg');
-  background-position: 62.5% 0;
+  background-image: url('../assets/home-hero2.jpg');
+  background-position: 25% 0;
 }
 
 @include mq(tablet){
@@ -56,6 +56,10 @@
     @include mq(desktop){
       text-align: left;
     }
+  }
+
+  a.button {
+    margin: 0 auto;
   }
 
   h2 {

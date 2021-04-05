@@ -1,6 +1,18 @@
 .fullbleed--checklist {
-  background: url('../assets/checklist-hero.jpg') center;
+  background: url('../assets/checklist-hero2.jpg');
+  background-position: 50% 0;
+  background-size:100%;
+  
+  @include mq(600px){
+    background-size:cover;
+  }
+  @include mq(320px){
+    background-size:cover;
+  }
+
 }
+
+
 
 .banner--checklist {
   padding-top: 70px;

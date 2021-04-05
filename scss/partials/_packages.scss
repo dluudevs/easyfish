@@ -1,0 +1,33 @@
+.fullbleed--packages {
+  background-image: url('../assets/package-hero.jpg');
+  background-position: 50% 0;
+}
+
+.package__item {
+  justify-content: center;
+
+  @include mq(tablet){
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .image-container {
+    width: 115px;
+    margin-bottom: 15px;
+
+    @include mq(tablet){
+      min-width: 105px;
+      margin-right: 20px;
+      width: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .text-container {
+    text-align: center;
+
+    @include mq(tablet){
+      text-align: left;
+    }
+  }
+}

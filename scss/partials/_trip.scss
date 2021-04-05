@@ -1,6 +1,6 @@
 .fullbleed--trip {
-  background-image: url('../assets/trip-hero.jpg');
-  background-position: center;
+  background-image: url('../assets/trip-hero2.jpg');
+  background-position: 40% 0;
 }
 
 #trip-cta {
@@ -16,29 +16,50 @@
   }
 
   .leads-form {
-    input {
+
+    .input-1, .input-2, .input-3 {
+      width: 100%;
       border: none;
       border-bottom: 1px solid $border-grey;
       box-shadow: none;
       color: $font-grey;
       margin-bottom: 19px;
-      width: 100%;
+      margin-right:19px;
 
       &::placeholder {
         color: $font-grey;
       }
+    }
 
-      @include mq(tablet){
-        &:nth-child(-n + 3), &[name="phoneNumber"]{
-          width: calc((100% - 90px) / 3);
-          TODO: add recaptcha
-        }
-  
-        &[name="number of people"]{
-          width: calc( ( (100% - 90px) / 3 ) * 2 + 45px );
-        }
+    @include mq(tablet){
+      .input-1 {
+        width: calc((100% - 90px) / 3);
+      }
+
+      .input-2 {
+        width: calc((100% - 37px) *  2/ 3);
+      }
+
+      .input-3 {
+        width: 100%;
       }
     }
+    // input {
+    //   border: none;
+    //   width: 47.5%;
+
+
+    //   @include mq(tablet){
+    //     &:nth-child(-n + 3), &[name="phoneNumber"]{
+    //       width: calc((100% - 90px) / 3);
+    //       //TODO: add recaptcha
+    //     }
+  
+    //     &[name="number of people"]{
+    //       width: calc( ( (100% - 90px) / 3 ) * 2 + 45px );
+    //     }
+    //   }
+    // }
 
     .button {
       width: 275px;
