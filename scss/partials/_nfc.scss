@@ -1,0 +1,42 @@
+#nfc-mobile {
+  height: 100vh;
+
+  .fullbleed--nfc {
+    background-image: url('../assets/nfc-hero.jpeg');
+    background-size: 145%;
+    background-position-x: center;
+    height: 30vh;
+  
+    h1 {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 22px;
+    }
+  }
+
+  .cta {
+    position: relative;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+
+  .cta-list {
+    padding: 24px 20px;
+    li {
+      color: $white;
+
+      &:last-child {
+        margin-top: 28px;
+      }
+    }
+
+    .cta-item {
+      background-color: $color-accent;
+      width: 100%;
+      padding: 28px 0;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+  }
+}
